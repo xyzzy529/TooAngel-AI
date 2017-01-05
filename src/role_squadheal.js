@@ -104,6 +104,9 @@ roles.squadheal.action = function(creep) {
     return true;
   } else {
     creep.log('In room');
+    // TODO calculate if we would to flip directly back to the previous room
+    // get all towers and calculate their potential damage
+    // the damage is applied after the first tick
     if (creep.hits < creep.hitsMax) {
       creep.log('action heal');
       creep.heal(creep);
